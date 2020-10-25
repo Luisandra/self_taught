@@ -1,0 +1,7 @@
+Hyper Text Markup Language
+-considered the skeleton of a web page
+<p> block level element
+
+FILE CONTENT: 
+chicken.html - bold tag <b>, header <H1>, paragraph <p>
+Pangolin_Practice.html - heading and paragraph elements
