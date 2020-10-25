@@ -11,6 +11,8 @@ Hyper Text Markup Language
         SHORTCUT = !+TAB = adds basic html boilerplate
 -List <ul> unordered list <ol> ordered list
     inside include <li> list item | <script> <template> are also allowed
+-anchor tag <a> - includes attribute
+    href="http://www.url.com"
 
 
 
