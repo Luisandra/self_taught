@@ -1,6 +1,6 @@
 Hyper Text Markup Language
 -considered the skeleton of a web page
-
+-comments = <!-- comment  -->
 -<p> block level element
 -boiler plate: 
     - <!DOCTYPE html> = flag to let browser know to use html 5
@@ -11,8 +11,9 @@ Hyper Text Markup Language
         SHORTCUT = !+TAB = adds basic html boilerplate
 -List <ul> unordered list <ol> ordered list
     inside include <li> list item | <script> <template> are also allowed
--anchor tag <a> - includes attribute
+-anchor tag <a> - are inline element. includes attribute
     href="http://www.url.com"
+-image <img src="fileLocation"> alt offers text description of img | no closing tag
 
 
 
@@ -22,3 +23,5 @@ chicken.html - bold tag <b>, header <H1>, paragraph <p>, <li>
 Pangolin_Practice.html - heading and paragraph elements
 
 fav_movie.html - lists
+
+chickens_about.html - image and links
