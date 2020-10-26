@@ -1,4 +1,6 @@
 Hyper Text Markup Language
+HTML5 - new version of html and larger set of technologies which allow for more powerful apps https://html.spec.whatwg.org/ will tell you how html should work
+
 -considered the skeleton of a web page
 -comments = <!-- comment  -->
 -<p> block level element
