@@ -13,9 +13,17 @@ HTML5 - new version of html and larger set of technologies which allow for more 
         SHORTCUT = !+TAB = adds basic html boilerplate
 -List <ul> unordered list <ol> ordered list
     inside include <li> list item | <script> <template> are also allowed
--anchor tag <a> - are inline element. includes attribute
+-<a> anchor tag - are inline element. includes attribute
     href="http://www.url.com"
 -image <img src="fileLocation"> alt offers text description of img | no closing tag
+-<div> block level - division element - generic container used to group content 
+-span inline element - another generic container
+- <hr> horizontal rule (divider)
+- <br> break - like using the enter key
+- <sup> superscript <sub> subscript 
+- HTML entities - sequence of char which create a special char all start with & and end with ; - List: https://dev.w3.org/html5/html-author/charref
+- reserved character, certain char which is important to code. IE the < are used to wrap around tags, therefore html entity should be used &lt; or & should be &amp;
+- semantic markup - meaningful markup
 
 
 
@@ -27,3 +35,5 @@ Pangolin_Practice.html - heading and paragraph elements
 fav_movie.html - lists
 
 chickens_about.html - image and links
+
+wolf_img_and_link.html - link and image
