@@ -1,7 +1,15 @@
 Hyper Text Markup Language
 HTML5 - new version of html and larger set of technologies which allow for more powerful apps https://html.spec.whatwg.org/ will tell you how html should work
-
 -considered the skeleton of a web page
+
+Emmet - VSCode Ext - helps with vscode html markup | cheatsheet: https://docs.emmet.io/cheat-sheet/
+    > - makes a child element. nav>ol>li makes nav with ol and li
+    + - makes sibling elements h1+h2, makes h1 with adjacent h2
+    * - makes multiple div>ul>li*5 makes ul with 5 lis, inside a div
+
+HTML entities - sequence of char which create a special char all start with & and end with ; - List: https://dev.w3.org/html5/html-author/charref
+    - reserved character, certain char which is important to code. IE the < are used to wrap around tags, therefore html entity should be used &lt; or & should be &amp;
+
 -comments = <!-- comment  -->
 -<p> block level element
 -boiler plate: 
@@ -21,9 +29,10 @@ HTML5 - new version of html and larger set of technologies which allow for more 
 - <hr> horizontal rule (divider)
 - <br> break - like using the enter key
 - <sup> superscript <sub> subscript 
-- HTML entities - sequence of char which create a special char all start with & and end with ; - List: https://dev.w3.org/html5/html-author/charref
-- reserved character, certain char which is important to code. IE the < are used to wrap around tags, therefore html entity should be used &lt; or & should be &amp;
-- semantic markup - meaningful markup
+- semantic markup - meaningful markup - IE, using header instead of div. essential for screen readers, SEL, 
+    figure, time, aside, header, footer, main, nav - basic containers used in semantic markup
+
+
 
 
 
