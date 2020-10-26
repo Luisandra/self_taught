@@ -10,15 +10,15 @@
     <form action="">
         <div id="contestant">
             <label for="fName">First Name </label>
-            <input type="text" id="fName">
+            <input type="text" id="fName" required>
             <label for="lName"> Last Name</label>
-            <input type="text" id="lName">
+            <input type="text" id="lName" required>
         </div>
         <div id="race">
             <p>Select a Race:</p>
             <div>
-                <input type="radio" id="5k" name="raceType" value="5k">
-                <label for="5k">Fun Run 5k</label>                
+                <input type="radio" id="fun5k" name="raceType" value="fun5k">
+                <label for="fun5k">Fun Run 5k</label>                
             </div>
             <div>
                 <input type="radio" id="half" name="raceType" value="half">
@@ -30,9 +30,9 @@
             </div>
             <div id="contact">
                 <label for="email">Email </label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" required>
                 <label for="pwrd">Password </label>
-                <input type="password" id="pwrd">
+                <input type="password" id="pwrd" name="password" required>
             </div>
             <div>
                 <label for="age">Select Age Group</label>
