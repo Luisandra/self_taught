@@ -31,6 +31,24 @@ HTML entities - sequence of char which create a special char all start with & an
 - <sup> superscript <sub> subscript 
 - semantic markup - meaningful markup - IE, using header instead of div. essential for screen readers, SEL, 
     figure, time, aside, header, footer, main, nav - basic containers used in semantic markup
+- <form> container to group form controls - used to specify how and where data should be sent 
+    action attribute is where info should go
+    <input> - no closing tag, and have to specify type of input. ID will create a way to identify
+        -name attribute is referring to data collected in input 
+    <label> has for attribute which should match input id attribute 
+    
+    <p>
+        <label for='username'>Enter user name</label>
+        <input id='username' type='text' placeholder="Username" name="user">
+    </p>
+    or NESTED:
+        <p>
+        <label>Enter user name
+            <input type='text' placeholder="Username" name='user'>
+        </label>
+        
+    </p>
+    <button> - inside form default behavior will submit form. can add type = "button", then it won't submit. Can also use <input type = "submit" value="click me!!!>
 
 
 

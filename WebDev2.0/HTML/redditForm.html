@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+</head>
+<body>
+    <h1>Reddit Search Form</h1>
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q" id="">
+        <button>Search Reddit</button>
+    </form>
+    <h1>Google Search</h1>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h1>Search YouTube</h1>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+    <h2>Other Input Types</h2>
+    <form action="/route">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="lg">Large</label>
+            <input type="radio" name="size" id="lg" value="lgSize">
+
+            <label for="md">Medium</label>
+            <input type="radio" name="size" id="md" value="mdSize">
+
+            <label for="sm">Small</label>
+            <input type="radio" name="size" id="sm" value="smSize">
+        </p>
+        <p>
+            <input type="range" id="mood" min='1' max='100' value='50' name='rank'>
+            <label for="mood">Rank your current mood</label>
+        </p>
+        <p>
+            <label for="instructions">Special Instructions</label>
+            <br>
+            <textarea id="instructions" name="custRequest" id="" cols="30" rows="5"></textarea>
+        </p>
+        <button>Submit Selection</button>
+    </form>
+</body>
+</html>
