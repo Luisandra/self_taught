@@ -37,6 +37,14 @@ SELECTORS
     Element selector (img, h1, etc) - selects every tag. Can also be separated by commas
     # ID selector - selects based on ID
     . Class selector - selects group with same class name
+    Descendant selector 
+        parentElement selectorYouWant {
+            attribute: value;
+        }
+    Adjacent Selector 
+        ElementFollowingSelector selectorYouWant {
+            attribute: value; 
+        }
     
     
 
