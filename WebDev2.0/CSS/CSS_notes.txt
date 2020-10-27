@@ -1,8 +1,37 @@
 Cascading Style Sheet
 the adjective of web pg
 -is a language
-Pattern for writing CSS
+Pattern for writing CSS:
+        selector {
+            property: value;
+        }
+can write inline style on HTML file | BAD PRACTICE! 
+-can include <style> at top of html inside of head to put all styling.
+Best practice - write css in css file then link page to html by using <link> in head of html
+    <link rel='stylesheet' href="styleSheet.css"> //href will be location of style sheet.
 
-selector {
-    property: value;
-}
+COLORS: (monitors display 16 mil different colors)
+    Named colors - colors with specific names ie - mediumorchid, teal, etc - 140 colors total
+    RGB (red, green, blue), specify amount of r, g, and b - between o and 255
+        rgb(0,0,255) = blue = blue | rgb(173,20,219) = purple
+        more color = lighter color, less color = dark (255,255,255)= white while (0,0,0)=black
+    Hexidecimal, is base 16. each spot can be 0-9 or A-F (10-15). starts with #, and there are 2 slots for R, G, and B. It is written as #RRGGBB
+        #0f5679 = dark blue green | #5FCFFC = light blue = some red, more blue, most green
+        -can also have 3 digit Hexidecimal- #000000 can be #000 (b/c pairs are same) | #CC55EE (pink) can be #C5E
+    HSL is another color system (not explained)
+
+TEXT: 
+    text align - left, right, center
+    font weight - boldness - can use bold, lighter OR numbers 700 = bold, 400 - normal
+    text decoration - decorative line - strike through, underline, etc. can set line type or remove default line
+    line height - changes line spacing, not text size
+    letter spacing - space between letters
+    font size - metrics vary
+        small, medium, large
+        PX - absolute - does not = 1 px - not good for responsive websites
+    font family - changes font type - not all computers have fonts, so you can list back up fonts to use if computer doesnt have specific font  
+        font-family: arial, calibri; //can also list a font family
+    
+    
+
+
