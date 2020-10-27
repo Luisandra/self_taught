@@ -1,0 +1,24 @@
+/* * {
+    background-color: rebeccapurple;
+} */
+
+button {
+    font-size: 30px;
+    background-color: #e09f3e;
+}
+h1, h2 {
+    color:#540b0e;
+}
+body {
+    background-color: #fff3b0;
+}
+#btn_signUp {
+    background-color: #9e2a2b;
+    color: #fff3b0;
+}
+
+.tag {
+    color: #335c67;
+    text-decoration: underline;
+    font-size: 20px;
+}

@@ -31,6 +31,12 @@ TEXT:
         PX - absolute - does not = 1 px - not good for responsive websites
     font family - changes font type - not all computers have fonts, so you can list back up fonts to use if computer doesnt have specific font  
         font-family: arial, calibri; //can also list a font family
+
+SELECTORS 
+    * universal selector - selects everything
+    Element selector (img, h1, etc) - selects every tag. Can also be separated by commas
+    # ID selector - selects based on ID
+    . Class selector - selects group with same class name
     
     
 
