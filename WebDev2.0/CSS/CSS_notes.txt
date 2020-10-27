@@ -1,0 +1,8 @@
+Cascading Style Sheet
+the adjective of web pg
+-is a language
+Pattern for writing CSS
+
+selector {
+    property: value;
+}
