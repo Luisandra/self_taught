@@ -80,5 +80,34 @@ SELECTORS
         ::first-line 
         ::selection - any part of element which is highlighted by user
     The Cascade - the order your style and links are declared MATTERS!!! IE - declare icon link first, then css pg to ensure you can style the icons. 
-specificity - the more specific the selector the higher the weight for the CSS, when there are competing styles. IE - two background colors applied with one selecting element and the other using class. Class is more specific and will be used for styling. 
+Specificity - the more specific the selector the higher the weight for the CSS, when there are competing styles. IE - two background colors applied with one selecting element and the other using class. Class is more specific and will be used for styling.  
+    https://specificity.keegan.st/
 
+CHROME CSS DEV TOOLS - in inspector it will show all styles and which ones are added but not applied. Can also play with styling in dev tools to see what changes would look like
+
+INLINE STYLE - styling in the same line of HTML, will over ride css. Not good practice anyway
+
+IMPORTANT RULE - when something is labeled as !important, will over ride all other styling. IE - class styling below would override an ID styling. 
+Not good practice
+    .someElement {
+        color: firebrick !important;
+    }
+
+INHERITANCE - some properties will be inherited by child elements. IE setting color to body. Body has no text, but has elements which has text. The text inherit color from body. certain elements do not naturally inherit, IE - buttons. You can set element to inherit   
+        body {
+            color: green;
+        }
+        button {
+            color: inherit; 
+        }
+
+BOX MODEL - everything has a box around it which contain: inner content, padding, border, and margin
+
+BORDER - 
+    border-box - width will go from border to border. will take away from border width to ensure entire content does not exceed width
+        div {
+            border-width: 5px;
+            box-sizing: border-box;
+        }
+    border can set width, style, and color in one line
+            border: 3px dashed red;
