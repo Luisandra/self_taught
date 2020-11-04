@@ -58,7 +58,7 @@ SELECTORS
         a[href*='example'] = href contains example
         a[href$='.org'] = href ending in .org
         a[class~="logo"] = a whos class contains the word logo 
-    Pseudo Classes - keywords added to a selector that specifies a special stat of the selected Element
+    PSEUDO CLASSES - keywords added to a selector that specifies a special stat of the selected Element
         :active-something being active (like onClick)
         :checked-checkbox is checked
         :first
@@ -73,5 +73,12 @@ SELECTORS
         a:hover { //when achor tag is hovered over
             color:orange;
         }
-
+    PSEUDO ELEMENT - keyworded added to selector that lets you style a particular part of selected Elements. Use :: to indicate pseudo element. ** if there's a beaker/flask icon next to element on MDN pg, it means it is experimental and shouldn't be used on production code.
+        ::after
+        ::before
+        ::first-letter
+        ::first-line 
+        ::selection - any part of element which is highlighted by user
+    The Cascade - the order your style and links are declared MATTERS!!! IE - declare icon link first, then css pg to ensure you can style the icons. 
+specificity - the more specific the selector the higher the weight for the CSS, when there are competing styles. IE - two background colors applied with one selecting element and the other using class. Class is more specific and will be used for styling. 
 
