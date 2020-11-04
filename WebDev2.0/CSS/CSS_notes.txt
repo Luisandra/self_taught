@@ -38,14 +38,40 @@ SELECTORS
     # ID selector - selects based on ID
     . Class selector - selects group with same class name
     Descendant selector 
-        parentElement selectorYouWant {
+        ElementSelectorIsInside selectorYouWant {
             attribute: value;
         }
     Adjacent Selector 
-        ElementFollowingSelector selectorYouWant {
+        ElementBeforeSelector selectorYouWant {
             attribute: value; 
         }
-    
-    
+    Direct Child Selector   
+        parentElement childSelectorYouWant {
+            attribute: value;
+        }
+    attribute selector
+        all inputs where type equals text
+        input[type="text"] {
+            attribute: value; 
+        }
+        -can also use other syntax
+        a[href*='example'] = href contains example
+        a[href$='.org'] = href ending in .org
+        a[class~="logo"] = a whos class contains the word logo 
+    Pseudo Classes - keywords added to a selector that specifies a special stat of the selected Element
+        :active-something being active (like onClick)
+        :checked-checkbox is checked
+        :first
+        :first-child
+        :hover-mouse is hovering
+        :not()
+        :nth-of-child()
+        :nth-of-type() - every certain # (ie, every 3rd) or a specific#
+            nth-of-type(3) 3rd
+            nth-of-type(3n) every 3rd
+        
+        a:hover { //when achor tag is hovered over
+            color:orange;
+        }
 
 

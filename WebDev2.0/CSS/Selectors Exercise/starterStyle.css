@@ -14,7 +14,7 @@ body {
 }
 #btn_signUp {
     background-color: #9e2a2b;
-    color: #fff3b0;
+    color: white;
 }
 
 .tag {
@@ -22,8 +22,40 @@ body {
     text-decoration: underline;
     font-size: 20px;
 }
-
+/* descendent selector - every a inside of elements with class of post  */
 .post a {
     color: #335c67;
     font-weight: 700;
+}
+
+/* adjacent selector - every button following an input  */
+input + button {
+    background-color: darkred;
+    color: white;
+}
+
+/* direct child selector */
+footer > a {
+    color: rgb(1, 70, 1);
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: red
+}
+
+.post button:hover {
+    background-color: black; 
+    color: red;
+    font-size: 75px;
+}
+
+.post button:active {
+    background-color: green;
+    color: greenyellow;
+    font-size: 75px;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #fff8d4;
 }
