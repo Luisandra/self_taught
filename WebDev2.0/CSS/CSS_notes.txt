@@ -111,3 +111,75 @@ BORDER -
         }
     border can set width, style, and color in one line
             border: 3px dashed red;
+
+PADDING - 
+    single line padding will adjust 
+        -1 value will affect all 4 sides
+            padding: 10px;
+        -2 values, 1st is vertical values, 2nd is horizontal
+            padding: 5px 15px
+        -3 values, top, horizontal, bottom
+            padding: 10px 25px 20px
+        -4 values, top, right, bottom, left
+            padding: 15px 30px 5px 5px
+
+MARGIN - 
+    ***remember body contains slight margin, which will impact element margin***
+    single line formatting is same as padding (above)
+    -inline elements may not behave as intended with margin - use display property (below) to fix
+    
+DISPLAY PROPERTY
+    INLINE - makes element inline IE - if used on H1, would change 
+    BLOCK - makes element block level IE- spans would change
+    INLINE-BLOCK - behaves like inline element, except height, margin, and padding are respected. 
+    NONE - will basically hide element, but will still be on pg, just not visible
+
+UNITS/MEASUREMENTS 
+    Relative - size is dependent on another element 
+        EM - FONT -1em = font size of parent, 2em = twice parent font size
+            NON FONT (ie-margin) - 1em = computed font size of element itself
+                h2 {
+                    font-size: 2em; //twice the parent font size
+                    margin-left: 1em //margin size matches font size above
+                }
+        REM - root em - use to avoid "stacking" em size in things like nested lists. Is relative to ROOT HTML ELEMENT <html>
+        VH 
+        % - will be a percentage of the something else
+            width/height - would be % of parent 
+            line-height - % of font size
+    Absolute - size does not change
+        PX - pixel, not exactly one pixel
+        PT 
+        CM 
+        IN 
+        MM 
+OPACITY & ALPHA - transparency - is from 0 (transparent) to 1 (not transparent)
+    ALPHA - only affects the element the color is set to, none of the child elements.
+        RGB - add # at the end - is from 0 (transparent) to 1 (not transparent)
+            color: rgba(01, 10, 80, 0.5) //navy blue text w/half transparency
+        HEX - add two char at the end from 00 to 5FCFFC
+            color: #80808080 //grey at half transparency
+    OPACITY - will affect entire element and contents
+        opacity: 0.3 //all contents of element will be slightly opaque 
+
+POSITION - sets how an element is positioned in a document. Use top, right, bottom, left to determine the final location of positioned elements
+    
+    Static - positioned based on normal flow of doc.    *this is the default position
+        position: static 
+    
+    Relative - is positioned based on the normal flow, and then offset by using top, right, bottom, left. Creates a stacking context when z-index is specified
+        position: relative
+        top: 
+    
+    Absolute - element removed from normal doc flow, and no space is created for element. Position is relative to closest positioned ancestor. if no ancestor, then positioned relative to initial containing block. Final position determined by top, right, bottom, left  
+        position: absolute
+        top: 
+    
+    Fixed - element removed from normal doc flow, and no space is created for element. positioned relative to initial containing block established by viewport, EXCEPT ancestors has a transform, perspective, or filter property set.  Final position determined by top, right, bottom, left
+        position: Fixed
+        top: 
+    
+    Sticky -  "sticks" to its nearest ancestor that has a "scrolling mechanism". positioned based on normal flow of doc, then offset by nearest scrolling ancestor and containing block. Offset does not affect other elements. 
+    //stays in position, and then sticks to top while scrolling
+
+TRANSITIONS - animation to switch from

@@ -1,0 +1,41 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    /* default position. Nothing changes  */
+    position: static;
+    /* As a result, top is not affected */
+    top: 100px
+}
+
+#relative #middle {
+    position: relative;
+    /* Does not affect other items  */
+    top: 50px; 
+    left: 50px;
+
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+#fixed #middle {
+    /* similar to absolute, but it will stay in position when scrolling */
+    position: fixed;
+    top: 50px; 
+    left: 300px;
+}
