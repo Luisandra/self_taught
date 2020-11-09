@@ -182,4 +182,18 @@ POSITION - sets how an element is positioned in a document. Use top, right, bott
     Sticky -  "sticks" to its nearest ancestor that has a "scrolling mechanism". positioned based on normal flow of doc, then offset by nearest scrolling ancestor and containing block. Offset does not affect other elements. 
     //stays in position, and then sticks to top while scrolling
 
-TRANSITIONS - animation to switch from
+TRANSITIONS - animation to switch from one form into another. add in css transition with # of seconds. Can specify  
+    property name, duration, timing function, delay
+        *timing function - to specify how the transition should occur. IE, ease-in will start slower and finish faster
+        
+        transition: background-color 1s ease-in 1s
+    great for :hover changes
+
+TRANSFORM - allows you to warp, move, rotate, scale, etc. Select property and how to transform. More details: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+    transform: rotate(45deg)
+        rotate - rotates element 
+        scale - change size (grow/shrink)
+        translate - move element
+        skey - adds a slant
+
+BOX-SHADOW - x-offset, y offset, blur radius, spread radius, color
