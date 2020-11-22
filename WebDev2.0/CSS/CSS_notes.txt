@@ -197,3 +197,15 @@ TRANSFORM - allows you to warp, move, rotate, scale, etc. Select property and ho
         skey - adds a slant
 
 BOX-SHADOW - x-offset, y offset, blur radius, spread radius, color
+
+Background Image - set img
+background-size:
+    CONTAIN - scales img as large as possible w/o cropping (will repeat unless repeat set to no)
+    COVER - scales img as large as possible w/cropping
+    AUTO - scales img in coresponding direction so intrinsic proportions are maintained
+    LENGTH - stretches img to specified length (no negative values)
+    % - stretches img to coresponding dimensions
+background-position - sets how img starts/aligned
+
+WHITESPACE CHAR - if you have multiple IMG or SPAN on a single line, there isn't a space, however if you put them on separate lines, there will be whitespace you must account for. Not an issue if using FlexBox
+
