@@ -209,3 +209,51 @@ background-position - sets how img starts/aligned
 
 WHITESPACE CHAR - if you have multiple IMG or SPAN on a single line, there isn't a space, however if you put them on separate lines, there will be whitespace you must account for. Not an issue if using FlexBox
 
+FLEXBOX - must add flex to parent element
+    display: flex;
+    flex-direction: ...; 
+        row - horizontal left to right
+        row-reverse - horizontal right to left
+        column
+        column-reverse
+
+    justify-content: ...;
+        flex-start - start at the beginning
+        flex-end - start at end
+        center - centers along main axis
+        space-between
+        space-around
+        space-evenly
+    
+    flex-wrap:...;
+        wrap - content will wrap around if it doesn't fit 
+        wrap-reverse - will wrap around, but in reverse
+
+    align-items: ...;
+        flex-start - align at the beginning of cross axis (top, depending on flex-direction)
+        flex-end - align at the end of the cross axis
+
+    align-content:...; *need flex-wrap turned on  
+        space-between
+        flex-start - start at the beginning
+    align-self:...; for ONE item inside container
+
+FLEX-BASIS - defines initial size of element before additional space is distributed
+
+FLEX-GROW - controls amnt of available space an element should take up. Accepts a unitless number value (like em)
+
+FLEX-SHRINK - if items are larger than container they shrink according to flex shrink. 
+
+FLEX - alters brow, basis, and shrink   
+    1 val is for Flex-grow  or basis 
+        flex: 2;
+        flex: 10%;
+    2 val is grow, basis   or grow, shrink  
+        flex: 1 30px
+        flex: 2 2;
+    3 val is grow, shrink, basis    
+        flex: 2 2 25em;
+
+MEDIA QUERIES - allows for modified styles depending on screen size. starts with @media followed by what to look for (size)
+-in MDN pg, any attribute level 5 does not have much support (think beta)
+-ORDER MATTERS, work largest size to smallest
